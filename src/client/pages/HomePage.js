@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => (
+const HomePage = () => (
   <div>
     <div>Home</div>
     <button onClick={() => console.log('testing')}>Click me</button>
@@ -8,4 +8,4 @@ const Home = () => (
 )
 
 
-export default Home;
+export default { component: HomePage };
