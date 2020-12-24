@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchUsers } from '../actions/index'
+import { fetchUsers } from '../actions/index';
 
+
+export const loadData = (store) => {  
+  return store.dispatch(fetchUsers());
+}
 export default () => {
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.user);
